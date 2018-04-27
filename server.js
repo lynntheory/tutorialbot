@@ -141,8 +141,8 @@ client.on('message', message => {
   */
   if (message.content.match(/hi /i) || //hi with a space after it
 		message.content.match(/hi\./i) ||  //hi with punctuation
-		message.content.match(/hi\?/i) ||
-		message.content.match(/hi\!/i) ||
+		message.content.match(/hi\?/i) ||  // the punctuation needs a \ before it
+		message.content.match(/hi\!/i) ||  // or it won't display properly
 		message.content === ('hi') ||      //hi by itself
 		message.content === ('Hi')) {      //capitalized hi by itself
 		var options = ['Hello!','Good morning to you as well!','Hey! How are you doing?'];
@@ -195,4 +195,4 @@ client.on('message', message => {
 
 
 });
-client.login(" "); //Input secret key here in "" OR put in .env file and put process.env.SECRET in the ()
+client.login(" "); //Input secret key here in "" OR put the key in a .env file and put process.env.SECRET in the ()
