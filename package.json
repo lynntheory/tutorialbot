@@ -1,0 +1,26 @@
+{
+  "name": "tutorialbot",
+  "version": "1.0.0",
+  "description": "This bot will help newcomers learn to code Discord Bots",
+  "main": "server.js",
+  "author": "lynntheory",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "discord.js": "^11.3.2"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://github.com/lynntheory/tutorialbot"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
